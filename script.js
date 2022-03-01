@@ -36,10 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   var div = document.createElement("div");
+  div.className = "text-center"
   document.body.appendChild(div);
 
   function outsideFunc() {
     var h3 = document.createElement("h3");
+    h3.className = "text-primary"
     h3.textContent = "Accusation " + i;
     h3.id = i;
     h3.addEventListener("click", alertFunc);
